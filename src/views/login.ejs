@@ -6,7 +6,7 @@
         <div class="col-lg-2"></div>
 
         <div class="col-lg-8 my-4">
-            <h1 class="text-center">Criar conta ou Login</h1>
+            <h1 class="text-center">Entrar na Agenda</h1>
             <p class="text-center lead">Faça login ou cadastre-se!</p>
             
             <%- include('includes/messages');%>
@@ -18,16 +18,16 @@
                     <form action="/login/register" method="post">
                         <input type="hidden" name="_csrf" value=<%= csrfToken %>>
                         <div class="form-group">
-                          <label>Seu e-mail</label>
+                          <label>Seu e-mail:</label>
                           <input type="email" class="form-control" name="email">
                           <small id="emailHelp" class="form-text text-muted">Seu e-mail não será compartilhado com ninguém.</small>
                         </div>
                         <div class="form-group">
-                          <label>Sua senha</label>
+                          <label>Sua senha:</label>
                           <input type="password" class="form-control" name="password">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Criar minha conta</button>
+                        <button type="submit" class="btn btn-primary" style="width:160px">Criar minha conta</button>
                       </form>
                 </div>
 
@@ -37,16 +37,16 @@
                     <form action="/login/login" method="post">
                         <input type="hidden" name="_csrf" value=<%= csrfToken %>>
                         <div class="form-group">
-                          <label>Seu e-mail</label>
-                          <input type="email" class="form-control" name="email">
-                          <small id="emailHelp" class="form-text text-muted">Seu e-mail não será compartilhado com ninguém.</small>
+                          <label>Seu e-mail:</label>
+                          <input type="email" class="form-control" name="email"><br>
+                          <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
-                          <label>Sua senha</label>
+                          <label>Sua senha:</label>
                           <input type="password" class="form-control" name="password">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Criar minha conta</button>
+                        <button type="submit" class="btn btn-primary" style="width:160px">Entrar</button>
                       </form>
                 </div>
             </div>
